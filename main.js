@@ -6,7 +6,9 @@ function createWindow() {
         height: 768,
         resizable: true,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            // to fix Uncaught error: require is not defined
+            contextIsolation: false,
         }
     })
 

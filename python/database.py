@@ -32,3 +32,22 @@ def create_connection():
         return dbconn
 
 # create_connection()
+
+# creating tables
+
+
+def create_tabel(connection, create_table_sql):
+    try:
+        conn = connection.cursor()
+        conn.execute(create_table_sql)
+    except Error as e:
+        print(e)
+
+# sql table function
+
+
+def start():
+    sql_products_table = """CREATE TABLE IF NOT EXISTS products (id integer PRIMARY KEY, productname text NOT NULL, datetime text NOT NULL, productweight text NOT NULL);"""
+    create_tabel(create_connection(), sql_products_table)
+
+start()
