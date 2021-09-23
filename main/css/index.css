@@ -1,0 +1,107 @@
+
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.index-main-container{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    padding: 0%;
+    margin: 0%;
+}
+
+.index-top-container{
+    height: 10%;
+    width: 100%;
+    position: relative;
+    background-color: burlywood;
+}
+
+.index-left-container{
+    height: 90%;
+    width: 15%;
+    float: left;
+    position: relative;
+    background-color: cadetblue;
+}
+
+.index-left-container-menu{
+    padding-top: 50%;
+    position: relative;
+}
+
+.index-left-menu-item-dashboard{
+    position: relative;
+    display: inline-block;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    width: 90%;
+}
+.index-left-menu-item-dashboard:hover{
+    background-color: darkorange;
+}
+.index-left-menu-item-dispatch{
+    position: relative;
+    display: inline-block;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    width: 90%;
+}
+.index-left-menu-item-dispatch:hover{
+    background-color: darkorange;
+}
+.index-left-menu-item-return{
+    position: relative;
+    display: inline-block;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    width: 90%;
+}
+.index-left-menu-item-return:hover{
+    background-color: darkorange;
+}
+.index-left-menu-item-shipment{
+    position: relative;
+    display: inline-block;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    width: 90%;
+}
+.index-left-menu-item-shipment:hover{
+    background-color: darkorange;
+}
+
+.index-left-menu-item-label{
+    font-family: Arial, Helvetica, sans-serif;
+    columns: black;
+    font-size: smaller;
+}
+
+.index-left-to-right-divider{
+    height: 90%;
+    width: 1%;
+    position: relative;
+    float: left;
+}
+
+.index-divider{
+    position: relative;
+    width: 1%;
+    height: 100%;
+    background-color: deepskyblue;
+}
+
+.index-right-container{
+    height: 90%;
+    width: 84%;
+    float: right;
+    position: relative;
+    background-color:tomato;
+}
