@@ -7,7 +7,7 @@ body{
 .index-main-container{
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: absolute;
     padding: 0%;
     margin: 0%;
@@ -25,7 +25,7 @@ body{
     width: 15%;
     float: left;
     position: relative;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 .index-left-container-menu{
@@ -103,5 +103,5 @@ body{
     width: 84%;
     float: right;
     position: relative;
-    background-color:tomato;
+    /* background-color:tomato; */
 }

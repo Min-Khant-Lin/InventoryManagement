@@ -1,0 +1,64 @@
+.dashboard-main-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+
+.dashboard-top-container{
+    /* same height for sub containers */
+    height: 33.33%;
+    width: 100%;
+    background-color: brown;
+    position: relative;
+}
+
+.dashboard-middle-container{
+    /* same height for sub containers */
+    height: 33.33%;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+.dashboard-middle-container-out{
+    height: 96%;
+    width: 96%;
+    position: relative;
+    margin: 2%;
+    background-color: wheat;
+}
+
+.dashboard-dispatch-card{
+    position: relative;
+    background-color: yellowgreen;
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+}
+
+.dashboard-return-card{
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    background-color: brown;
+    width: 28.5%;
+    height: 100%;
+    display: inline-block;
+}
+
+.dashboard-shipment-card{
+    position: relative;
+    background-color: rosybrown;
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+}
+
+.dashboard-bottom-container{
+    /* same height for sub containers */
+    height: 33.33%;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
