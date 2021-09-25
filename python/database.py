@@ -47,7 +47,11 @@ def create_tabel(connection, create_table_sql):
 
 
 def start():
-    sql_products_table = """CREATE TABLE IF NOT EXISTS products (id integer PRIMARY KEY, productname text NOT NULL, datetime text NOT NULL, productweight text NOT NULL);"""
+    sql_products_table = """CREATE TABLE IF NOT EXISTS products (id integer PRIMARY KEY, productid text NOT NULL, name text NOT NULL, datetime text NOT NULL, weight text NOT NULL);"""
+    sql_customers_table = """CREATE TABLE IF NOT EXISTS customers (id integer PRIMARY KEY, customerid text NOT NULL, name text NOT NULL, datetime text NOT NULL, location text NOT NULL);"""
+    sql_suppliers_table = """CREATE TABLE IF NOT EXISTS suppliers (id integer PRIMARY KEY, supplierid text NOT NULL, name text NOT NULL, datetime text NOT NULL, location text NOT NULL);"""
     create_tabel(create_connection(), sql_products_table)
+    create_tabel(create_connection(), sql_customers_table)
+    create_tabel(create_connection(), sql_suppliers_table)
 
-start()
+start() 
