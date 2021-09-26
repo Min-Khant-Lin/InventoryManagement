@@ -63,3 +63,4 @@ document.getElementById('index-left-menu-item-shipment').addEventListener('click
         document.head.appendChild(imported)
     })
 })
+
