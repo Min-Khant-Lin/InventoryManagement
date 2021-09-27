@@ -111,7 +111,8 @@ body{
 .dashboard-row{
     position: relative;
     width: 100%;
-    padding-top: 10px;
+    margin-left: 10%;
+    padding-top: 5%;
 }
 
 .dashboard-product-align-column-a{
@@ -140,9 +141,9 @@ body{
     height: 96%;
     width: 60%;
     position: relative;
+    margin-right: 2.5%;
     margin-top: 6%;
     display: right;
-    border-style: solid;
     border-radius: 5px;
     border-width: 10%;
     background-color: lightgreen;

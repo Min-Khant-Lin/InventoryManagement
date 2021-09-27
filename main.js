@@ -1,4 +1,6 @@
 const { app, BrowserWindow } = require('electron')
+const { spawn } = require('child_process')
+
 
 function createWindow() {
     const window = new BrowserWindow({
@@ -18,8 +20,12 @@ function createWindow() {
     // window.webContents.openDevTools()
 }
 
+
 // when app is ready, show the window
-app.whenReady().then(createWindow)
+app.whenReady().then(
+    // for python3.9 the command to run python = python
+    spawn("python", ["./python/main.py"]), createWindow)
+
 
 // when the window is closed, quit the app
 app.on('window-all-closed', () => {
@@ -28,9 +34,10 @@ app.on('window-all-closed', () => {
     }
 })
 
+
 // when app is active
 app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
+    if (BrowserWindow.getAllWindows().length == 0) {
         createWindow()
     }
 })
