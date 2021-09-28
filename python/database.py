@@ -54,4 +54,4 @@ def start():
     create_tabel(create_connection(), sql_customers_table)
     create_tabel(create_connection(), sql_suppliers_table)
 
-start() 
+# start() 

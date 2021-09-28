@@ -1,5 +1,7 @@
 fs = require('fs')
 
+var request = require('request-promise')
+
 document.getElementById('dashboard-product-add-new-btn').addEventListener('click', () => {
     // when app is open default page should be dashboard
     fs.readFile('dashboard/newproduct.html', (err, data) => {
