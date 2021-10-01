@@ -10,10 +10,11 @@ from pathlib import Path
 def create_connection():
     # location of database file
     root = os.path.dirname(os.path.realpath(__file__))
+    # root = os.path.dirname('L:/CAD/ADMAC/DB/')
 
     # file name of the databse
     database = os.path.join(root, 'invmgm.db')
-
+    print(database)
     # for checking the database file is created or not
     mydb = Path(root+'/invmgm.db')
     dbconn = None
@@ -25,10 +26,10 @@ def create_connection():
 
     # if database was not created when server start
     if mydb.exists():
-        print('Database exists.')
+        print(f'Database exists in .{database}')
         return dbconn
     else:
-        print('Databse doesnt exist.')
+        print('Databse does not exist.')
         return dbconn
 
 # create_connection()
@@ -54,4 +55,4 @@ def start():
     create_tabel(create_connection(), sql_customers_table)
     create_tabel(create_connection(), sql_suppliers_table)
 
-# start() 
+start() 

@@ -115,21 +115,21 @@ body{
     padding-top: 5%;
 }
 
-.dashboard-product-align-column-a{
+.dashboard-align-column-a{
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
     width: 40%;
     display: inline-block;
 }
-.dashboard-product-align-column-b{
+.dashboard-align-column-b{
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
     width: 10%;
     display: inline-block;
 }
-.dashboard-product-align-column-c{
+.dashboard-align-column-c{
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;

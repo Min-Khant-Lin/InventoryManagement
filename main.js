@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron')
-const { spawn } = require('child_process')
+const { spawn, execFile } = require('child_process')
 
 
 function createWindow() {
@@ -27,6 +27,7 @@ function createWindow() {
 app.on('ready', async () => {
     createWindow()
     spawn("python", ["./python/main.py"])
+    // execFile("./python/dist/main.exe")
 
   })
 
